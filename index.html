@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="مبادرة مفتوحة المصدر لتبسيط الرياضيات الجامعية بالعربية مع المصطلحات الإنجليزية."
+    />
+    <title>الرياضيات الجامعية بالعربية</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="الصفحة الرئيسية">
+          <span class="brand-mark" aria-hidden="true">∑</span>
+          <span>الرياضيات الجامعية بالعربية</span>
+        </a>
+        <nav aria-label="التنقل الرئيسي">
+          <a href="#about">عن المشروع</a>
+          <a href="#lesson">الدرس التجريبي</a>
+          <a href="#practice">تدرّب</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">مشروع مفتوح المصدر · إصدار أولي</p>
+            <h1>افهم الفكرة بالعربية، وتعلّم مصطلحها بالإنجليزية.</h1>
+            <p class="hero-copy">
+              شروحات واضحة، أمثلة محلولة، وتمارين قصيرة تساعدك على بناء فهم حقيقي
+              للرياضيات الجامعية خطوة بخطوة.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#lesson">ابدأ الدرس التجريبي</a>
+              <a class="button secondary" href="#about">تعرّف على المشروع</a>
+            </div>
+          </div>
+
+          <aside class="formula-card" aria-label="مثال رياضي">
+            <span class="card-label">Linear Algebra</span>
+            <p class="formula" dir="ltr">v = (3, 4)</p>
+            <p class="formula-result" dir="ltr">‖v‖ = √(3² + 4²) = 5</p>
+            <p>طول المتجه يساوي <strong>5</strong>.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <p class="eyebrow">لماذا هذا المشروع؟</p>
+          <h2>جسر بين الفهم والمصطلح الأكاديمي</h2>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span aria-hidden="true">ع</span>
+              <h3>شرح عربي واضح</h3>
+              <p>لغة مباشرة تركّز على المعنى قبل الرموز والخطوات الحسابية.</p>
+            </article>
+            <article class="feature-card">
+              <span aria-hidden="true">EN</span>
+              <h3>المصطلح الإنجليزي</h3>
+              <p>إبقاء المصطلحات الأصلية بجانب ترجمتها لتسهيل متابعة المقرر.</p>
+            </article>
+            <article class="feature-card">
+              <span aria-hidden="true">✓</span>
+              <h3>تعلّم بالممارسة</h3>
+              <p>أمثلة محلولة وأسئلة قصيرة مع تغذية راجعة فورية.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lesson-section" id="lesson">
+        <div class="container lesson-layout">
+          <article class="lesson-card">
+            <div class="lesson-heading">
+              <div>
+                <p class="eyebrow">الجبر الخطي · Linear Algebra</p>
+                <h2>مقدمة إلى المتجهات</h2>
+              </div>
+              <span class="duration">8 دقائق</span>
+            </div>
+
+            <p>
+              المتجه <strong>(Vector)</strong> كمية لها مقدار واتجاه. في المستوى يمكن
+              تمثيله بزوج مرتب مثل <span class="inline-math" dir="ltr">v = (x, y)</span>.
+            </p>
+
+            <h3>طول المتجه</h3>
+            <p>
+              نحسب طول المتجه باستخدام نظرية فيثاغورس. إذا كان
+              <span class="inline-math" dir="ltr">v = (x, y)</span> فإن:
+            </p>
+            <div class="math-block" dir="ltr" role="img" aria-label="معيار المتجه يساوي الجذر التربيعي لمجموع مربع مركبتيه">
+              ‖v‖ = √(x² + y²)
+            </div>
+
+            <div class="worked-example">
+              <h3>مثال محلول</h3>
+              <p>للمتجه <span dir="ltr">u = (6, 8)</span>:</p>
+              <ol>
+                <li>نعوّض: <span dir="ltr">‖u‖ = √(6² + 8²)</span></li>
+                <li>نجمع المربعات: <span dir="ltr">√(36 + 64) = √100</span></li>
+                <li>إذن: <span dir="ltr">‖u‖ = 10</span></li>
+              </ol>
+            </div>
+          </article>
+
+          <aside class="terms-card" aria-labelledby="terms-title">
+            <h3 id="terms-title">مصطلحات الدرس</h3>
+            <dl>
+              <div><dt>متجه</dt><dd dir="ltr">Vector</dd></div>
+              <div><dt>مقدار / طول</dt><dd dir="ltr">Magnitude</dd></div>
+              <div><dt>مركّبة</dt><dd dir="ltr">Component</dd></div>
+              <div><dt>اتجاه</dt><dd dir="ltr">Direction</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section practice-section" id="practice">
+        <div class="container practice-card">
+          <div>
+            <p class="eyebrow">اختبر فهمك</p>
+            <h2>ما طول المتجه <span dir="ltr">w = (5, 12)</span>؟</h2>
+            <p>اختر الإجابة الصحيحة، ثم اقرأ التوضيح.</p>
+          </div>
+
+          <form id="quiz-form" class="quiz" novalidate>
+            <fieldset>
+              <legend class="sr-only">خيارات الإجابة</legend>
+              <label><input type="radio" name="answer" value="12" /> 12</label>
+              <label><input type="radio" name="answer" value="13" /> 13</label>
+              <label><input type="radio" name="answer" value="17" /> 17</label>
+            </fieldset>
+            <button class="button primary" type="submit">تحقق من الإجابة</button>
+            <p id="quiz-feedback" class="feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section next-section">
+        <div class="container">
+          <p class="eyebrow">قريبًا</p>
+          <h2>موضوعات مقترحة للإصدارات القادمة</h2>
+          <ul class="topic-list">
+            <li>المصفوفات والعمليات عليها</li>
+            <li>النهايات والاستمرارية</li>
+            <li>التفاضل وتطبيقاته</li>
+            <li>مبادئ الاحتمالات</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <p>مشروع تعليمي مفتوح المصدر — المحتوى في مرحلة مبكرة.</p>
+        <a href="https://github.com/Gray-rixx101/-arabic-university-math">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
