@@ -7,7 +7,8 @@ struct AppData: Codable {
     var settings = AppSettings()
     var habits: [Habit] = []
 
-    static let appGroup = "group.com.athar.habits"
+    /// يُقرأ من Info.plist حتى يتطابق مع معرّف الحزمة الذي يختاره المطوّر
+    static let appGroup = Bundle.main.object(forInfoDictionaryKey: "AtharAppGroup") as? String ?? "group.com.athar.habits"
 
     static var fileURL: URL {
         let base = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroup)
